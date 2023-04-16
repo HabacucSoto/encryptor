@@ -33,14 +33,20 @@ i {
     margin-left: 5%;
     font-family: 'Audiowide', cursive;
 }
+#logo h1 {
+    font-size: 3.5vw;
+}
 
 #icons {
     margin-right: 5%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     i {
         font-size: 4.3vw;
+    }
+    #logo h1 {
+        font-size: 6vw;
     }
 }
 
