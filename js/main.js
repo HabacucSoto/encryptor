@@ -1,9 +1,9 @@
 // ! DOM components
-const input = document.getElementById("input").value;
+let result = document.getElementById("result");
 const img = document.getElementById("img");
-const encrypt = document.getElementById("encrypt");
-const decrypt = document.getElementById("decrypt");
-const copy = document.getElementById("copy");
-const clear = document.getElementById("clear");
+const encryptBtn = document.getElementById("encrypt");
+const decryptBtn = document.getElementById("decrypt");
+const copyBtn = document.getElementById("copy");
+const clearBtn = document.getElementById("clear");
 
 
