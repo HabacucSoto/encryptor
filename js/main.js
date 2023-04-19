@@ -14,3 +14,14 @@ const keys = {
     o: "ober",
     u: "ufat"
 };
+
+// ! Encrypt event
+encryptBtn.addEventListener("click", () => {
+    let input = document.getElementById("input").value;
+    for(key in keys){
+        const regex = new RegExp(key, "g");
+        input = input.replace(regex, keys[key]);
+    };
+    img.style.display = "none";
+    result.innerHTML = input;
+});
