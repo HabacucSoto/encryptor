@@ -15,6 +15,9 @@ const keys = {
     u: "ufat"
 };
 
+// ! Clipboard
+const clipboard = navigator.clipboard;
+
 // ! Encrypt event
 encryptBtn.addEventListener("click", () => {
     let input = document.getElementById("input").value;
@@ -35,5 +38,12 @@ decryptBtn.addEventListener("click", () => {
     };
     img.style.display = "none";
     result.innerHTML = input;
+});
 
+// ! Clipboard event
+copyBtn.addEventListener("click", () => {
+    result = document.getElementById("result").innerText;
+    clipboard.writeText(result).then(() => {
+        console.log(result);
+    });
 });
