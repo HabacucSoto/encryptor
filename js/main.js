@@ -25,3 +25,15 @@ encryptBtn.addEventListener("click", () => {
     img.style.display = "none";
     result.innerHTML = input;
 });
+
+// ! Decrypt event
+decryptBtn.addEventListener("click", () => {
+    let input = document.getElementById("input").value;
+    for(key in keys){
+        const regex = new RegExp(keys[key], "g");
+        input = input.replace(regex, key);
+    };
+    img.style.display = "none";
+    result.innerHTML = input;
+
+});
